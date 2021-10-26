@@ -1,5 +1,38 @@
 # Face-recognition
 人脸识别认证 imooc java课程搭配使用
 
-安装face_recognition可能比较困难请仔细阅读 [文档](https://github.com/ageitgey/face_recognition/blob/master/README_Simplified_Chinese.md#%E6%8A%8A%E6%9C%AC%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E5%9C%A8%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A-heroku-aws%E7%AD%89)
+安装face_recognition比较麻烦建议使用docker 下面已经准备好了 cv工程师准备好了吗
+
+### 1.自行构建
+
+```shell
+$ docker build -t [镜像名称] .
+
+$ docker run -d -p 3000:3000 --name [容器名称] [镜像名称]
+```
+
+### 2.拉取镜像
+
+```shell
+$ docker pull registry.cn-shanghai.aliyuncs.com/uyoung/face_recognition:latest
+
+ docker run -d -p 3000:3000 --name [容器名称] registry.cn-shanghai.aliyuncs.com/uyoung/face_recognition:latest
+```
+
+### 3.食用方法
+
+1. 创建模型接口
+
+   ["POST", "GET"]
+
+   http://localhost:3000/create_face_model
+   
+   直接访问是调试页面 可以通过此页面上传图片进行测试
+
+2. 识别与认证接口
+   ["POST", "GET"]
+
+   http://localhost:3000/checkin
+
+   直接访问是调试页面
 
