@@ -16,7 +16,7 @@ $ docker run -d -p 3000:3000 --name [容器名称] [镜像名称]
 ```shell
 $ docker pull registry.cn-shanghai.aliyuncs.com/uyoung/face_recognition:latest
 
-$ cker run -d -p 3000:3000 --name [容器名称] registry.cn-shanghai.aliyuncs.com/uyoung/face_recognition:latest
+$ docker run -d -p 3000:3000 --name [容器名称] registry.cn-shanghai.aliyuncs.com/uyoung/face_recognition:latest
 ```
 
 ### 2.食用方法
