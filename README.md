@@ -3,7 +3,7 @@
 
 安装face_recognition比较麻烦建议使用docker 下面已经准备好了 cv工程师准备好了吗
 
-### 1.1行构建
+### 运行方式-自行构建
 
 ```shell
 $ docker build -t [镜像名称] .
@@ -11,7 +11,7 @@ $ docker build -t [镜像名称] .
 $ docker run -d -p 3000:3000 --name [容器名称] [镜像名称]
 ```
 
-### 1.2拉取镜像
+### 嫌麻烦可以直接拉取我构建好的
 
 ```shell
 $ docker pull registry.cn-shanghai.aliyuncs.com/uyoung/face_recognition:latest
